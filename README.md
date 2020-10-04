@@ -4,12 +4,16 @@
 ### Download Elastic Search Docker image 
 
 ```
-docker network create elasticsearc-network
-docker run -d --name elasticsearch --net elasticsearc-network -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:7.9.2
+Change directory to -> C:\Anuj\Coursera\mydockerfiles\elasticsearch-kibana
+1. $ docker network create elasticsearch-network
+
+2. $ docker run -d --name elasticsearch --net elasticsearch-network -v $PWD/esdata:/usr/share/elasticsearch/data -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:7.9.2
+
+3. $ docker run -d --name kibana --net elasticsearch-network -p 5601:5601 kibana:6.8.12
 
 ```
 
-### Using Postman  create indexes and nsert data
+### Using Postman  create indexes and insert data
 ```
 
 PUT  : localhost:9200/school
