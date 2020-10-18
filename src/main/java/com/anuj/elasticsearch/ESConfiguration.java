@@ -25,17 +25,17 @@ import springfox.documentation.spring.web.plugins.Docket;
 public class ESConfiguration {
 
 	
-    @Bean
-    TransportClient transportClient() throws UnknownHostException  {
-        return new PreBuiltTransportClient(
-            Settings.builder()
-                .put(ClusterName.CLUSTER_NAME_SETTING.getKey(), "docker-cluster")
-                .build()
-            )
-            .addTransportAddress(new TransportAddress(
-                InetAddress.getByName("localhost"), 9200)).addTransportAddress(new TransportAddress(
-                        InetAddress.getByName("localhost"), 9300));
-    }
+//    @Bean
+//    TransportClient transportClient() throws UnknownHostException  {
+//        return new PreBuiltTransportClient(
+//            Settings.builder()
+//                .put(ClusterName.CLUSTER_NAME_SETTING.getKey(), "docker-cluster")
+//                .build()
+//            )
+//            .addTransportAddress(new TransportAddress(
+//                InetAddress.getByName("localhost"), 9200)).addTransportAddress(new TransportAddress(
+//                        InetAddress.getByName("localhost"), 9300));
+//    }
 
     
 	@Bean

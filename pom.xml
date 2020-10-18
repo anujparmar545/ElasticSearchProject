@@ -103,19 +103,33 @@
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/org.elasticsearch.client/transport -->
-<dependency>
-    <groupId>org.elasticsearch.client</groupId>
-    <artifactId>transport</artifactId>
-    <version>7.5.2</version>
-</dependency>
+		<dependency>
+		    <groupId>org.elasticsearch.client</groupId>
+		    <artifactId>transport</artifactId>
+		    <version>7.5.2</version>
+		</dependency>
 
 		
-	<!-- <dependency>
-	 	<groupId>org.elasticsearch.client</groupId>
-	    <artifactId>elasticsearch-rest-high-level-client</artifactId>
-	    <version>7.5.1</version>
-	</dependency> -->
+		<dependency>
+		 	<groupId>org.elasticsearch.client</groupId>
+		    <artifactId>elasticsearch-rest-high-level-client</artifactId>
+		    <version>7.6.2</version>
+		</dependency> 
 	
+		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-elasticsearch -->
+	<dependency>
+	    <groupId>org.springframework.data</groupId>
+	    <artifactId>spring-data-elasticsearch</artifactId>
+	    <version>3.2.10.RELEASE</version>
+	</dependency>
+		
+	 <dependency>
+    <groupId>org.elasticsearch</groupId>
+    <artifactId>elasticsearch</artifactId>
+    <version>7.8.0</version>
+</dependency> 
+	
+		
 	</dependencies>
 
 
